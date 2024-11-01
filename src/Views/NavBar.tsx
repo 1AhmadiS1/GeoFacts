@@ -13,7 +13,9 @@ function NavBar({dark,darkmode}:darkmodeprops) {
             <button  onClick={darkmode} className='flex  font-light p-2'>
 
             <FaMoon  className={`${dark?"text-white":"text-gray-900"} text-xl`} />
-  <p className='text-sm mx-2'>Dark mode</p>
+  {dark?  <p className='text-sm mx-2'>Light mode</p>
+:  <p className='text-sm mx-2'>Dark mode</p>
+}
             </button>
 
     </nav>
